@@ -42,6 +42,7 @@
       font-family: cursive;
       cursor: pointer;
     }
+    
     body {
     font-family: Arial;
     background-color: #f4f4f4;
@@ -92,10 +93,20 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    width: 90%;
+    text-decoration: none;
+}
+
+.zoom {
+    transition: transform 0.3s ease;
+}
+
+.zoom:hover {
+    transform: scale(1.1);
 }
 
 .card button:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .card button:active {
@@ -124,15 +135,16 @@ footer {
       <h1>Healthy Food Recipes</h1>
     </div>
   </div>
+  
   <div class="container">
 
     <div class="card">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJj5RKz3eJxOSdk28gyf8k7pM29m9ajwyfA&s" alt="A healthy breakfast meal">
+        <img class="zoom" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCJj5RKz3eJxOSdk28gyf8k7pM29m9ajwyfA&s" alt="A healthy breakfast meal">
         <div class="card-content">
             <h3>Breakfast</h3>
             <p>Discover how to make this delicious recipes at home with our easy-to-follow steps.</p>
         </div>
-        <button>View Recipes</button>
+       <a href="breakfast.html" style="text-decoration: none;"><button class="zoom" class="card button">View Recipes</button></a> 
     </div>
 
     <div class="card">
@@ -141,7 +153,7 @@ footer {
             <h3>Lunch</h3>
             <p>Discover how to make this delicious recipes at home with our easy-to-follow steps.</p>
         </div>
-        <button>View Recipes</button>
+       <a href="lunch.html" style="text-decoration: none;"><button class="zoom" class="card button">View Recipes</button></a> 
     </div>
 
     <div class="card">
@@ -150,7 +162,7 @@ footer {
             <h3>Dinner</h3>
             <p>Discover how to make this delicious recipes at home with our easy-to-follow steps.</p>
         </div>
-        <button>View Recipes</button>
+       <a href="dinner.html" style="text-decoration: none;"><button class="zoom" class="card button">View Recipes</button></a> 
     </div>
 
     <div class="card">
@@ -159,7 +171,7 @@ footer {
             <h3>Desserts</h3>
             <p>Discover how to make this delicious recipes at home with our easy-to-follow steps.</p>
         </div>
-        <button>View Recipes</button>
+       <a href="desert.html" style="text-decoration: none;"><button class="zoom" class="card button">View Recipes</button></a> 
     </div>
 
     <div class="card">
@@ -168,7 +180,7 @@ footer {
             <h3>Drinks</h3>
             <p>Discover how to make this delicious recipes at home with our easy-to-follow steps.</p>
         </div>
-        <button>View Recipes</button>
+       <a href="drinks.html" style="text-decoration: none;"><button class="zoom" class="card button">View Recipes</button></a> 
     </div>
 
     <div class="card">
@@ -179,7 +191,7 @@ footer {
               we are always here to help.
             </p>
         </div>
-        <button>Contact Us</button>
+       <a href="contact-us.html" style="text-decoration: none;"><button class="zoom" class="card button">Contact Us</button></a> 
     </div>
 
 </div>

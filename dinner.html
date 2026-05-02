@@ -1,35 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy food</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Dinner Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Register</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="breakfast.html">Breakfast</a></li>
-                <li><a href="lunch.html">Lunch</a></li>
-                <li><a href="dinner.html">Dinner</a></li>
-                <li><a href="desert.html">Desert</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
+      <div class="container navbar">
+        <div class="brand">
+          <div>
+            <div>Healthy Dinner</div>
+            <small>Fresh recipes for every mood</small>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#recipes">Recipes</a>
+          <a href="#home">Home</a>
+          <a href="#footer">Contact</a>
         </nav>
+      </div>
     </header>
 
-    <main>
-        </main>
+    <main class="container">
+      <section class="hero">
+        <h1>Healthy Dinner Recipes</h1>
+        <p>Discover a wide variety of healthy dinner recipes, from one-pan meals and stir-fries to bowls and soups. Use the search bar to find easy dinner ideas with fresh flavors and simple prep.</p>
 
-    <footer>
-        <p>&copy; 2026 IT Project</p>
+        <div class="search-bar">
+          <input id="search" type="search" placeholder="Search varied dinner recipes..." aria-label="Search varied dinner recipes" />
+          <button id="searchButton" type="button">Search</button>
+        </div>
+      </section>
+
+      <section id="recipes" class="grid" aria-live="polite">
+        <!-- Recipe 1: One-Pan Lemon Herb Chicken -->
+        <article class="recipe-card" data-recipe-id="1">
+          <div class="card-image">
+            <img src="https://www.lecremedelacrumb.com/wp-content/uploads/2021/03/one-pot-lemon-herb-chicken-rice-6sm-4.jpg" alt="One-Pan Lemon Herb Chicken" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">One-Pan</span>
+            </div>
+            <h2 class="card-title">One-Pan Lemon Herb Chicken</h2>
+            <p class="card-subtitle">Juicy chicken baked with lemon, rosemary, and tender vegetables for an easy dinner.</p>
+            <div class="extra-content" id="details-1">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>2 chicken breasts</li>
+                  <li>1 lemon, sliced</li>
+                  <li>1 cup baby carrots</li>
+                  <li>1 cup baby potatoes</li>
+                  <li>2 tbsp olive oil</li>
+                  <li>1 tsp dried rosemary</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Toss chicken and vegetables with oil, lemon, and rosemary.</li>
+                  <li>Arrange on a baking sheet in one layer.</li>
+                  <li>Bake at 400°F for 25-30 minutes.</li>
+                  <li>Serve hot with pan juices.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-1">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 2: Garlic Shrimp & Veggie Skillet -->
+        <article class="recipe-card" data-recipe-id="2">
+          <div class="card-image">
+            <img src="https://ketocookingchristian.com/wp-content/uploads/2023/08/Garlic-Butter-Shrimp-and-Veggies-Skillet1-scaled.jpg" alt="Garlic Shrimp & Veggie Skillet" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Seafood</span>
+            </div>
+            <h2 class="card-title">Garlic Shrimp & Veggie Skillet</h2>
+            <p class="card-subtitle">Quick garlic shrimp cooked with zucchini, tomatoes, and spinach for a light dinner.</p>
+            <div class="extra-content" id="details-2">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 lb shrimp, peeled</li>
+                  <li>1 zucchini, sliced</li>
+                  <li>1 cup cherry tomatoes</li>
+                  <li>2 cups spinach</li>
+                  <li>2 garlic cloves, minced</li>
+                  <li>1 tbsp olive oil</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Sauté garlic in olive oil until fragrant.</li>
+                  <li>Add shrimp and cook until pink.</li>
+                  <li>Add zucchini and tomatoes, cooking until tender.</li>
+                  <li>Stir in spinach until wilted and serve.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-2">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 3: Turkey Taco Salad Bowl -->
+        <article class="recipe-card" data-recipe-id="3">
+          <div class="card-image">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Turkey-Taco-Salad_exps167536_SD2847494D02_15_5bC_RMS-2.jpg?fit=750%2C750" alt="Turkey Taco Salad Bowl" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Bowl</span>
+            </div>
+            <h2 class="card-title">Turkey Taco Salad Bowl</h2>
+            <p class="card-subtitle">A flavorful salad bowl with seasoned turkey, beans, avocado, and crisp greens.</p>
+            <div class="extra-content" id="details-3">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 lb ground turkey</li>
+                  <li>1 can black beans, drained</li>
+                  <li>4 cups mixed greens</li>
+                  <li>1 avocado, sliced</li>
+                  <li>1/2 cup salsa</li>
+                  <li>1 tsp taco seasoning</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Cook turkey with taco seasoning until browned.</li>
+                  <li>Toss greens with beans and salsa.</li>
+                  <li>Top with turkey and avocado.</li>
+                  <li>Serve with lime wedges.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-3">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 4: Roasted Veggie Buddha Bowl -->
+        <article class="recipe-card" data-recipe-id="4">
+          <div class="card-image">
+            <img src="https://san-j.com/wp-content/uploads/2020/09/roasted_vegetable_buddha_bowl_fb-7830.jpg" alt="Roasted Veggie Buddha Bowl" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Balanced</span>
+            </div>
+            <h2 class="card-title">Roasted Veggie Buddha Bowl</h2>
+            <p class="card-subtitle">A filling bowl with roasted vegetables, quinoa, chickpeas, and tahini dressing.</p>
+            <div class="extra-content" id="details-4">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 cup cooked quinoa</li>
+                  <li>1 cup roasted Brussels sprouts</li>
+                  <li>1 cup roasted sweet potatoes</li>
+                  <li>1/2 cup chickpeas</li>
+                  <li>2 tbsp tahini</li>
+                  <li>1 tbsp lemon juice</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Arrange quinoa, veggies, and chickpeas in a bowl.</li>
+                  <li>Whisk tahini with lemon juice.</li>
+                  <li>Drizzle dressing over the bowl.</li>
+                  <li>Serve warm or at room temperature.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-4">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 5: Beef & Broccoli Stir Fry -->
+        <article class="recipe-card" data-recipe-id="5">
+          <div class="card-image">
+            <img src="https://www.dinneratthezoo.com/wp-content/uploads/2017/10/beef-and-broccoli-stir-fry-14.jpg" alt="Beef & Broccoli Stir Fry" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Stir-Fry</span>
+            </div>
+            <h2 class="card-title">Beef & Broccoli Stir Fry</h2>
+            <p class="card-subtitle">A simple stir fry with lean beef, broccoli, and a savory ginger soy sauce.</p>
+            <div class="extra-content" id="details-5">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 lb flank steak, sliced</li>
+                  <li>3 cups broccoli florets</li>
+                  <li>2 tbsp soy sauce</li>
+                  <li>1 tbsp grated ginger</li>
+                  <li>1 garlic clove, minced</li>
+                  <li>1 tbsp sesame oil</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Stir fry beef in sesame oil until browned.</li>
+                  <li>Add garlic, ginger, and broccoli.</li>
+                  <li>Pour in soy sauce and cook until broccoli is tender.</li>
+                  <li>Serve over brown rice.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-5">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 6: Creamy Mushroom Farro -->
+        <article class="recipe-card" data-recipe-id="6">
+          <div class="card-image">
+            <img src="https://www.abeautifulplate.com/wp-content/uploads/2019/01/easy-mushroom-farro-risotto-1-6-1024x1536.jpg" alt="Creamy Mushroom Farro" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Comfort</span>
+            </div>
+            <h2 class="card-title">Creamy Mushroom Farro</h2>
+            <p class="card-subtitle">A comforting, easy grain bowl with farro, mushrooms, spinach, and garlic.</p>
+            <div class="extra-content" id="details-6">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 cup cooked farro</li>
+                  <li>8 oz mushrooms, sliced</li>
+                  <li>2 cups spinach</li>
+                  <li>2 garlic cloves, minced</li>
+                  <li>1/4 cup vegetable broth</li>
+                  <li>2 tbsp Parmesan</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Sauté mushrooms and garlic until golden.</li>
+                  <li>Add spinach and cook until wilted.</li>
+                  <li>Stir in farro and broth until heated.</li>
+                  <li>Finish with Parmesan and serve.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-6">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 7: Lentil Tomato Stew -->
+        <article class="recipe-card" data-recipe-id="7">
+          <div class="card-image">
+            <img src="https://media.soscuisine.com/images/recettes/large/2059.jpg" alt="Lentil Tomato Stew" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Soup</span>
+            </div>
+            <h2 class="card-title">Lentil Tomato Stew</h2>
+            <p class="card-subtitle">A hearty lentil stew with tomatoes, carrots, and warming spices for a comforting meal.</p>
+            <div class="extra-content" id="details-7">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 cup red lentils</li>
+                  <li>1 can diced tomatoes</li>
+                  <li>1 carrot, diced</li>
+                  <li>1 celery stalk, diced</li>
+                  <li>1 tsp smoked paprika</li>
+                  <li>4 cups vegetable broth</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Sauté carrots and celery until softened.</li>
+                  <li>Add lentils, tomatoes, and broth.</li>
+                  <li>Simmer until lentils are tender.</li>
+                  <li>Season with paprika and serve warm.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-7">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 8: Sweet Potato & Black Bean Enchiladas -->
+        <article class="recipe-card" data-recipe-id="8">
+          <div class="card-image">
+            <img src="https://www.connoisseurusveg.com/wp-content/uploads/2025/09/sweet-potato-black-bean-enchiladas-11.jpg" alt="Sweet Potato & Black Bean Enchiladas" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Vegetarian</span>
+            </div>
+            <h2 class="card-title">Sweet Potato & Black Bean Enchiladas</h2>
+            <p class="card-subtitle">Warm enchiladas filled with seasoned sweet potato, black beans, and topped with avocado.</p>
+            <div class="extra-content" id="details-8">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>2 sweet potatoes, cubed</li>
+                  <li>1 can black beans, drained</li>
+                  <li>8 corn tortillas</li>
+                  <li>1 cup enchilada sauce</li>
+                  <li>1 avocado, sliced</li>
+                  <li>1 tsp chili powder</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Roast sweet potatoes with chili powder.</li>
+                  <li>Mix with black beans and fill tortillas.</li>
+                  <li>Place in a baking dish and top with enchilada sauce.</li>
+                  <li>Bake at 375°F for 15 minutes and garnish with avocado.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-8">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 9: Thai Basil Chicken -->
+        <article class="recipe-card" data-recipe-id="9">
+          <div class="card-image">
+            <img src="https://therecipecritic.com/wp-content/uploads/2023/02/thaibasilchicken-667x1000.jpg" alt="Thai Basil Chicken" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Asian</span>
+            </div>
+            <h2 class="card-title">Thai Basil Chicken</h2>
+            <p class="card-subtitle">A fragrant stir fry with ground chicken, basil, bell pepper, and a tangy sauce.</p>
+            <div class="extra-content" id="details-9">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 lb ground chicken</li>
+                  <li>1 red bell pepper, sliced</li>
+                  <li>2 garlic cloves, minced</li>
+                  <li>2 tbsp soy sauce</li>
+                  <li>1 tbsp fish sauce</li>
+                  <li>1 cup fresh basil leaves</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Cook garlic and chicken until browned.</li>
+                  <li>Add bell pepper and sauces.</li>
+                  <li>Stir in basil until wilted.</li>
+                  <li>Serve with steamed rice.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-9">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 10: Chickpea & Spinach Curry -->
+        <article class="recipe-card" data-recipe-id="10">
+          <div class="card-image">
+            <img src="https://www.currytrail.in/wp-content/uploads/2017/01/Chickpea-potato-spinach-curry-1-.jpg" alt="Chickpea & Spinach Curry" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Vegan</span>
+            </div>
+            <h2 class="card-title">Chickpea & Spinach Curry</h2>
+            <p class="card-subtitle">A creamy curry with chickpeas, spinach, tomatoes, and warming Indian spices.</p>
+            <div class="extra-content" id="details-10">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 can chickpeas, drained</li>
+                  <li>3 cups spinach</li>
+                  <li>1 can diced tomatoes</li>
+                  <li>1 onion, diced</li>
+                  <li>2 garlic cloves, minced</li>
+                  <li>1 tsp curry powder</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Sauté onion and garlic until soft.</li>
+                  <li>Add tomatoes, chickpeas, and curry powder.</li>
+                  <li>Simmer until flavors meld.</li>
+                  <li>Stir in spinach and cook until wilted.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-10">View Recipe</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <p>Healthy Dinner Recipes • Crafted with nourishing ingredients and balanced flavors.</p>
+        <p>Enjoy wholesome meals designed for a healthier lifestyle.</p>
+      </div>
     </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+>
 
 </body>
 </html>

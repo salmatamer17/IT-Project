@@ -10,7 +10,7 @@
 
     <header>
         
-        <nav>
+        <!--<nav>
             <ul>
                 <li><a href="index.html">Register</a></li>
                 <li><a href="home.html">Home</a></li>
@@ -21,15 +21,282 @@
                 <li><a href="drinks.html">Drinks</a></li>
                 <li><a href="contact-us.html">Contact Us</a></li>
             </ul>
-        </nav>
+        </nav>-->
+         <style>
+            
+            body {
+                font-family: Arial;
+                background-color: #6E473B;
+                padding: 12px;
+            }
+
+            img {
+                width: 27%;
+                border-radius: 8px;
+                height: 75%;
+            }
+
+            h1 {
+                font-family: cursive;
+                text-align: center;
+                padding-top: 30px;
+                padding-bottom: 30px;
+                border-radius: 10px;
+                color: white;
+            }
+
+            .recipes {
+                display: grid;
+                grid-template-columns: repeat(3,1f);
+            }
+
+            .recipe-card {
+                background-color: #c2a084;
+                border: 1px ;
+                border-radius: 12px; 
+                padding: 18px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 18px;
+            }
+
+            p {
+                font-size: 40px;
+                font-weight: 400;
+                color: white;
+                font-family: cursive ;
+                display: block;
+            }
+
+            .recipe-details {
+                color: white;
+                font-size: 24px;
+                display: inline-block;
+                margin: 20px;
+            }
+
+            footer {
+                text-align: center;
+                color: white;
+                padding: 10px;
+                cursor: pointer;
+            }
+
+         </style>
+
     </header>
 
     <main>
-        <p>hello</p>
+        <h1>Healthy Lunches</h1>
+        <div class="recipes">
+            <div class="recipe-card">
+                <p>Lemon Herb Roasted Chicken</p>
+                <div class="content"> 
+                    <img src="images/recipe.lunch.1.jpeg">
+                    <ul class="recipe-details">
+                        <li>
+                            <h3>Ingredients:</h3>
+                            <ul>
+                                <li>Skinless chicken breasts or thighs.</li>
+                                <li>2 tbsp Olive oil, 3 cloves of minced garlic, and fresh lemon juice</li>
+                                <li>Fresh Rosemary and Thyme.</li>
+                                <li>Mixed vegetables (Broccoli, carrots, and baby potatoes).</li>
+                            </ul>
+                        </li>
+                        <li>   
+                            <h3>Instructions:</h3>
+                            <ol>
+                                <li>Marinate the chicken with garlic, lemon, olive oil, and herbs for 20 minutes.</li>
+                                <li>Place the chicken and chopped vegetables on a baking tray.</li>
+                                <li>Roast in a preheated oven at 200°C for 30-35 minutes until golden brown.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Macros:</h3>
+                            <ul>
+                                <li>Calories: 350 kcal</li>
+                                <li>Protein: 42g</li>
+                                <li>Carbs: 12g</li>
+                                <li>Fats: 14g</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="recipe-card">
+                <p>Grilled Salmon & Quinoa Power Bowl</p>
+                <div class="content">
+                    <img src="images/recipe.lunch.2.jpeg">
+                    <ul class="recipe-details">
+                        <li>
+                            <h3>Ingredients:</h3>
+                            <ul>
+                                <li>Fresh Salmon fillet.</li>
+                                <li>1/2 cup cooked Quinoa</li>
+                                <li>Sliced Avocado and cherry tomatoes.</li>
+                                <li>Dressing: Honey mustard and a splash of apple cider vinegar.</li>
+                            </ul>
+                        </li>
+                        <li>   
+                            <h3>Instructions:</h3>
+                            <ol>
+                                <li>Season the salmon with salt and pepper, then grill for 4-5 minutes per side.</li>
+                                <li>Boil quinoa in water (1:2 ratio) until fluffy</li>
+                                <li>Assemble the bowl starting with quinoa, then add the grilled salmon, avocado, and drizzle with dressing</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Macros:</h3>
+                            <ul>
+                                <li>Calories: 520 kcal</li>
+                                <li>Protein: 34g</li>
+                                <li>Carbs: 45g</li>
+                                <li>Fats: 22g (Healthy Omega-3 fats)</li>
+                            </ul>
+                        </li>    
+                    </ul>
+                </div>    
+            </div>
+            <div class="recipe-card">
+                <p>Roasted Sweet Potato & Chickpea Salad</p>
+                <div class="content">
+                    <img src="images/recipe.lunch.3.jpeg" style="height: auto;">
+                    <ul class="recipe-details">
+                        <li>
+                            <h3>Ingredients:</h3>
+                            <ul>
+                                <li>1 can of Chickpeas (rinsed and drained).</li>
+                                <li>2 medium Sweet potatoes (cubed).</li>
+                                <li>Fresh Baby spinach or Arugula.</li>
+                                <li>Tahini dressing (Tahini, lemon juice, and a pinch of cumin).</li>
+                            </ul>
+                        </li>
+                        <li>   
+                            <h3>Instructions:</h3>
+                            <ol>
+                                <li>Toss sweet potato cubes in olive oil and roast at 200°C for 20 minutes.</li>
+                                <li>In a large bowl, mix the roasted potatoes with chickpeas and spinach.</li>
+                                <li>Pour the creamy tahini dressing over the salad and toss well before serving.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Macros</h3>
+                            <ul>
+                                <li>Calories: 380 kcal</li>
+                                <li>Protein: 12g</li>
+                                <li>Carbs: 58g</li>
+                                <li>Fats: 10g</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>   
+            </div>
+            <div class="recipe-card">
+                <p>Creamy Avocado Pasta (Vegetarian)</p>
+                <div class="content">
+                    <img src="images/recipe.lunch.4.jpeg">
+                    <ul class="recipe-details">
+                        <li>
+                            <h3>Ingredients:</h3>
+                            <ul>
+                                <li>Whole wheat or gluten-free Spaghetti.</li>
+                                <li>1 Ripe Avocado, fresh basil leaves, and 2 cloves of garlic.</li>
+                                <li>Cherry tomatoes (for topping).</li>
+                                <li>Lemon juice and a splash of pasta water.</li>
+                            </ul>
+                        </li>
+                        <li>   
+                            <h3>Instructions:</h3>
+                            <ol>
+                                <li>Boil the pasta according to package instructions.</li>
+                                <li>Blend the avocado, basil, garlic, and lemon juice until smooth.</li>
+                                <li>Toss the pasta with the avocado sauce and top with fresh cherry tomatoes.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Macros:</h3>
+                            <ul>
+                                <li>Calories: 410 kcal</li>
+                                <li>Protein: 11g</li>
+                                <li>Carbs: 52g</li>
+                                <li>Fats: 18g (Healthy Omega-3 fats)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="recipe-card"> 
+                <p>Garlic Butter Shrimp with Asparagus</p>
+                <div class="content">
+                    <img src="images/recipe.lunch.5.jpeg">
+                    <ul class="recipe-details">
+                        <li>
+                            <h3>Ingredients:</h3>
+                            <ul>
+                                <li>Large Shrimp (peeled and deveined).</li>
+                                <li>A bunch of fresh Asparagus.</li>
+                                <li>1 tbsp Butter (or Ghee), lemon zest, and red pepper flakes.</li>
+                                <li>Fresh parsley.</li>
+                            </ul>
+                        </li>
+                        <li>   
+                            <h3>Instructions:</h3>
+                            <ol>
+                                <li>Sauté asparagus in a pan with a bit of butter until tender.</li>
+                                <li>Add the shrimp and garlic, cooking for 2-3 minutes per side.</li>
+                                <li>Finish with lemon zest and chopped parsley.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Macros:</h3>
+                            <ul>
+                                <li>Calories: 280 kcal</li>
+                                <li>Protein: 36g</li>
+                                <li>Carbs: 8g</li>
+                                <li>Fats: 12g (Healthy Omega-3 fats)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
+            <div class="recipe-card">
+                <p>Mediterranean Quinoa Salad with Feta</p>
+                <div class="content">
+                    <img src="images/recipe.lunch.6.jpeg">
+                    <ul class="recipe-details">
+                        <li>
+                            <h3>Ingredients:</h3>
+                            <ul>
+                                <li>Cooked Quinoa.</li>
+                                <li>Cucumber, red onion, and kalamata olives.</li>
+                                <li>Low-fat Feta cheese.</li>
+                                <li>Dressing: Red wine vinegar and dried oregano.</li>
+                            </ul>
+                        </li>
+                        <li>   
+                            <h3>Instructions:</h3>
+                            <ol>
+                                <li>Chop all vegetables into small cubes.</li>
+                                <li>In a large bowl, combine quinoa, vegetables, olives, and crumbled feta.</li>
+                                <li>Whisk the dressing ingredients and pour over the salad.</li>
+                            </ol>
+                        </li>
+                        <li>
+                            <h3>Macros:</h3>
+                            <ul>
+                                <li>Calories: 320 kcal</li>
+                                <li>Protein: 14g</li>
+                                <li>Carbs: 38g</li>
+                                <li>Fats: 13g (Healthy Omega-3 fats)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
-
     <footer>
-        <p>&copy; 2026 IT Project</p>
+        © 2026 Healthy Food Recipes
     </footer>
 
 </body>

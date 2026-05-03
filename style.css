@@ -360,13 +360,13 @@ footer a {
 
 /* Dark Mode using Forest/Olive palette */
 [data-theme="dark"] {
-  --dark-brown: #31251b; /
-  --primary: #A67C52;    
-  --secondary: #2A1F16;  
-  --surface: #120E0B;    
-  --bg: #080705;         
-  --text: #D1C7BD;       
-  --muted: #5C4F44;      
+  --dark-brown: #31251b; 
+  --primary: #A67C52;
+  --secondary: #2A1F16;
+  --surface: #120E0B;
+  --bg: #080705;
+  --text: #D1C7BD;
+  --muted: #5C4F44;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 

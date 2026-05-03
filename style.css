@@ -24,7 +24,7 @@
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: radial-gradient(circle at top, rgba(255,255,255,0.85), transparent 40%), var(--bg);
+background: var(--bg);
   color: var(--text);
   line-height: 1.6;
 }
@@ -332,4 +332,61 @@ footer a {
   .search-bar {
     grid-template-columns: 1fr;
   }
+}
+
+
+
+
+.card-image video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-image img.hidden,
+.card-image video.hidden {
+  display: none;
+}
+
+/* Default - Light Theme */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #333333;
+  --container-layout: row; 
+}
+
+
+
+/* Dark Mode using Forest/Olive palette */
+[data-theme="dark"] {
+  --dark-brown: #31251b; /
+  --primary: #A67C52;    
+  --secondary: #2A1F16;  
+  --surface: #120E0B;    
+  --bg: #080705;         
+  --text: #D1C7BD;       
+  --muted: #5C4F44;      
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+/* Applying to your specific card and badge classes */
+[data-theme="dark"] .recipe-card {
+  background: var(--surface);
+  color: var(--text);
+}
+
+[data-theme="dark"] .badge {
+  background: rgba(105, 117, 101, 0.2); /* Sage Green at 20% opacity */
+  color: var(--text);
+}
+
+[data-theme="dark"] .search-bar input {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--secondary);
+}
+
+[data-theme="dark"] body {
+  background: var(--bg);
 }

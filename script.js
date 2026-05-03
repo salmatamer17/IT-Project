@@ -102,3 +102,38 @@ recipeGrid.addEventListener('click', handleToggle);
 document.querySelectorAll('.recipe-card').forEach(card => {
   card.classList.add('visible');
 });
+
+
+document.querySelectorAll('.card-image[data-video]').forEach(container => {
+  container.addEventListener('click', () => {
+    const videoURL = container.dataset.video.replace('embed/', 'watch?v=');
+    window.open(videoURL, '_blank');
+  });
+});
+
+document.querySelectorAll('.card-image[data-video]').forEach(container => {
+  container.addEventListener('click', () => {
+    const videoURL = container.dataset.video.replace('embed/', 'watch?v=');
+    window.open(videoURL, '_blank');
+  });
+});
+
+
+
+const themeBtn = document.getElementById('theme-toggle');
+
+const applyTheme = (theme) => {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('user-theme', theme);
+  if(themeBtn) themeBtn.textContent = theme === 'light' ? 'Dark Mode' : 'Light Mode';
+}
+
+// Load saved theme immediately
+applyTheme(localStorage.getItem('user-theme') || 'light');
+
+if(themeBtn) {
+  themeBtn.addEventListener('click', () => {
+    const newTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    applyTheme(newTheme);
+  });
+}

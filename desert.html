@@ -1,35 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy food</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Dessert Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  </head>
+  <body>
 
     <header>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Register</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="breakfast.html">Breakfast</a></li>
-                <li><a href="lunch.html">Lunch</a></li>
-                <li><a href="dinner.html">Dinner</a></li>
-                <li><a href="desert.html">Desert</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
+      <div class="container navbar">
+        <div class="brand">
+          <div class="brand-icon"></div>
+          <div>
+            <div class="brand-name">Sweet &amp; Wholesome</div>
+            <div class="brand-tagline">Guilt-free indulgence, every day</div>
+          </div>
+        </div>
+        <nav class="nav-links"> <button id="theme-toggle" class="theme-btn">Dark Mode</button>
+          <a href="#recipes">Recipes</a>
+          <a href="home.html">Home</a>
+          <a href="contact-us.html">Contact</a>
         </nav>
+      </div>
     </header>
 
-    <main>
-        </main>
+    <main class="container">
+      <section class="hero">
+        <h1><em> Healthy Dessert Recipes</em></h1>
+        <p>Satisfy your sweet tooth without the guilt. Explore wholesome treats — from frozen delights and raw bites to baked goods and smoothie bowls — made with real, nourishing ingredients.</p>
+        <div class="search-bar">
+          <input id="search" type="search" placeholder="Search healthy desserts..." aria-label="Search healthy desserts" />
+          <button id="searchButton" type="button">Search</button>
+        </div>
+      </section>
+      <section id="recipes" class="grid" aria-live="polite">
+        <!-- 1 Chocolate Avocado Mousse -->
+        <article class="recipe-card" data-recipe-id="1">
+          <div class="card-image" style="cursor: pointer;" data-video="https://youtu.be/RQwNxVymQVw/ID?autoplay=1">
+  <img src="images/Avocado-Chocolate-Mousse-1.jpg" alt="Recipe name" loading="lazy" />
+</div>
+          <div class="card-content">
+            <div class="card-meta"><span class="badge sweet">No-Bake</span> </div> 
+            <h2 class="card-title">Chocolate Avocado Mousse<i class="fa-brands fa-youtube"></i></h2>
+            <p class="card-subtitle">Silky, rich chocolate mousse made with ripe avocados, cacao powder, and maple syrup — zero guilt required.</p>
+            <div class="extra-content" id="details-1">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>2 ripe avocados</li>
+                  <li>3 tbsp raw cacao powder</li>
+                  <li>3 tbsp maple syrup</li>
+                  <li>1 tsp vanilla extract</li>
+                  <li>Pinch of sea salt</li>
+                  <li>2 tbsp almond milk</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Blend all ingredients until completely smooth.</li>
+                  <li>Taste and adjust sweetness with more maple syrup.</li>
+                  <li>Spoon into glasses and chill for 20 minutes.</li>
+                  <li>Top with berries or cacao nibs and serve.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-1">View Recipe</button>
+          </div>
+        </article>
+        <!-- 2 Banana Ice Cream -->
+        <article class="recipe-card" data-recipe-id="2">
+          <div class="card-image" style="cursor: pointer;" data-video="https://youtu.be/Vqt5mjhlrUY">
+  <img src="images/banana ice-cream.jpg" alt="Recipe name" loading="lazy" />
+</div>
+          <div class="card-content">
+            <div class="card-meta"><span class="badge frozen">Frozen</span></div>
+            <h2 class="card-title">Banana Ice Cream <i class="fa-brands fa-youtube"></i></h2>
+            <p class="card-subtitle">Creamy one-ingredient ice cream from frozen bananas — endlessly customizable with your favorite toppings.</p>
+            <div class="extra-content" id="details-2">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>4 ripe bananas, frozen</li>
+                  <li>2 tbsp Almond milk </li>
+                  <li>1 tsp vanilla extract</li>
+                  <li>Toppings: granola, berries, honey</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Slice and freeze bananas overnight.</li>
+                  <li>Blend frozen bananas until smooth and creamy.</li>
+                  <li>Mix in peanut butter and cinnamon if using.</li>
+                  <li>Serve immediately or freeze for a firmer texture.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-2">View Recipe</button>
+          </div>
+        </article>
 
-    <footer>
-        <p>&copy; 2026 IT Project</p>
+        <!-- 3 Berry Chia Pudding -->
+        <article class="recipe-card" data-recipe-id="3">
+          <div class="card-image" style="cursor: pointer;" data-video="https://youtu.be/TgvC053Pn7c">
+  <img src="images/berry-chia-pudding.jpg" alt="Recipe name" loading="lazy" />
+</div>
+          <div class="card-content">
+            <div class="card-meta"><span class="badge raw">Raw</span></div>
+            <h2 class="card-title">Berry Chia Pudding <i class="fa-brands fa-youtube"></i></h2>
+            <p class="card-subtitle">Overnight chia pudding layered with fresh mixed berries, coconut milk, and a drizzle of honey.</p>
+            <div class="extra-content" id="details-3">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>3 tbsp chia seeds</li>
+                  <li>1 cup coconut milk</li>
+                  <li>1 tbsp honey or maple syrup</li>
+                  <li>1 tsp vanilla extract</li>
+                  <li>1 cup mixed berries</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Stir chia seeds into coconut milk with vanilla and honey.</li>
+                  <li>Refrigerate for at least 4 hours or overnight.</li>
+                  <li>Stir well before serving.</li>
+                  <li>Layer with fresh berries and serve chilled.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-3">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- 4 Oat & Date Energy Balls -->
+        <article class="recipe-card" data-recipe-id="4">
+         <div class="card-image" style="cursor: pointer;" data-video="https://youtu.be/JwMmn8Z9exk">
+  <img src="images/oat-chocwalnut-date.jpg" alt="Recipe name" loading="lazy" />
+</div>
+          <div class="card-content">
+            <div class="card-meta"><span class="badge sweet">No-Bake</span></div>
+            <h2 class="card-title">Oat &amp; Date Energy Balls <i class="fa-brands fa-youtube"></i></h2>
+            <p class="card-subtitle">Chewy, naturally sweet bites packed with rolled oats, medjool dates, and dark chocolate chips.</p>
+            <div class="extra-content" id="details-4">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 cup rolled oats</li>
+                  <li>10 medjool dates, pitted</li>
+                  <li>2 tbsp almond butter</li>
+                  <li>2 tbsp dark chocolate chips</li>
+                  <li>1 tsp vanilla extract</li>
+                  <li>Pinch of sea salt</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Blend dates into a paste in a food processor.</li>
+                  <li>Mix in oats, almond butter, vanilla, and salt.</li>
+                  <li>Fold in chocolate chips by hand.</li>
+                  <li>Roll into balls and refrigerate for 30 minutes.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-4">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- 5 Baked Cinnamon Pears -->
+        <article class="recipe-card" data-recipe-id="5">
+          <div class="card-image" style="cursor: pointer;" data-video="https://youtu.be/7r_B4ZfXlLU">
+  <img src="images/baked-pears-whipped-cream.jpg" alt="Recipe name" loading="lazy" />
+</div>
+          <div class="card-content">
+            <div class="card-meta"><span class="badge baked">Baked</span></div>
+            <h2 class="card-title">Baked Cinnamon Pears <i class="fa-brands fa-youtube"></i></h2>
+            <p class="card-subtitle">Tender halved pears roasted with cinnamon, a drizzle of honey, and topped with crushed walnuts.</p>
+            <div class="extra-content" id="details-5">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>3 ripe pears, halved and cored</li>
+                  <li>2 tbsp honey</li>
+                  <li>1 tsp cinnamon</li>
+                  <li>1/4 cup chopped walnuts</li>
+                  <li>1/2 tsp vanilla extract</li>
+                  <li>Greek yogurt, to serve</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Place pear halves cut-side up on a baking sheet.</li>
+                  <li>Drizzle with honey, vanilla, and dust with cinnamon.</li>
+                  <li>Bake at 375°F for 20–25 minutes until tender.</li>
+                  <li>Top with walnuts and a dollop of Greek yogurt.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-5">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- 6 Mango Coconut Sorbet -->
+        <article class="recipe-card" data-recipe-id="6">
+          <div class="card-image">
+            <img src="images/mango-coconut-min.jpg" alt="Mango Coconut Sorbet" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta"><span class="badge frozen">Frozen</span></div>
+            <h2 class="card-title">Mango Coconut Sorbet</h2>
+            <p class="card-subtitle">A tropical two-ingredient sorbet blended from frozen mango and creamy coconut milk — vegan and refreshing.</p>
+            <div class="extra-content" id="details-6">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>3 cups frozen mango chunks</li>
+                  <li>1/3 cup coconut milk</li>
+                  <li>1 tbsp lime juice</li>
+                  <li>1 tsp lime zest</li>
+                  <li>Pinch of sea salt</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Blend frozen mango with coconut milk until smooth.</li>
+                  <li>Add lime juice, zest, and salt; blend again.</li>
+                  <li>Serve immediately as soft-serve or freeze 1 hour for firmer texture.</li>
+                  <li>Scoop and garnish with fresh mint.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-6">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- 7: Greek Yogurt Bark -->
+        <article class="recipe-card" data-recipe-id="7">
+          <div class="card-image">
+            <img src="images/yogurtbark.jpg" alt="Greek Yogurt Bark" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta"><span class="badge frozen">Frozen</span></div>
+            <h2 class="card-title">Greek Yogurt Bark</h2>
+            <p class="card-subtitle">Frozen Greek yogurt topped with colorful berries, granola, and a honey drizzle — snappy and satisfying.</p>
+            <div class="extra-content" id="details-7">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>2 cups plain Greek yogurt</li>
+                  <li>2 tbsp honey</li>
+                  <li>1/2 cup sliced strawberries</li>
+                  <li>1/4 cup blueberries</li>
+                  <li>2 tbsp granola</li>
+                  <li>1 tsp vanilla extract</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Mix yogurt with vanilla and 1 tbsp honey.</li>
+                  <li>Spread onto a parchment-lined baking sheet.</li>
+                  <li>Scatter berries and granola on top; drizzle with remaining honey.</li>
+                  <li>Freeze for 3–4 hours, then break into pieces.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-7">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- 8 Almond Flour Brownies -->
+        <article class="recipe-card" data-recipe-id="8">
+          <div class="card-image">
+            <img src="images/Almond-Chocolate-Brownies.jpg" alt="Almond Flour Brownies" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta"><span class="badge baked">Baked</span></div>
+            <h2 class="card-title">Almond Flour Brownies</h2>
+            <p class="card-subtitle">Fudgy, gluten-free brownies made with almond flour, coconut sugar, and rich dark chocolate — dense and decadent.</p>
+            <div class="extra-content" id="details-8">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 cup almond flour</li>
+                  <li>1/3 cup coconut sugar</li>
+                  <li>1/4 cup cacao powder</li>
+                  <li>2 eggs</li>
+                  <li>1/4 cup coconut oil, melted</li>
+                  <li>1 tsp vanilla extract</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Whisk eggs, coconut oil, vanilla, and sugar together.</li>
+                  <li>Fold in almond flour and cacao powder until combined.</li>
+                  <li>Pour into a greased 8×8 pan.</li>
+                  <li>Bake at 350°F for 18–20 minutes; cool before cutting.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-8">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- 9 Strawberry Smoothie Bowl -->
+        <article class="recipe-card" data-recipe-id="9">
+          <div class="card-image">
+            <img src="images/strawberry-smoothie-bowl.jpg" alt="Strawberry Smoothie Bowl" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta"><span class="badge drink">Smoothie Bowl</span></div>
+            <h2 class="card-title">Strawberry Smoothie Bowl</h2>
+            <p class="card-subtitle">A thick, vibrant strawberry base loaded with fresh fruit, seeds, coconut flakes, and a crunch of granola.</p>
+            <div class="extra-content" id="details-9">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>2 cups frozen strawberries</li>
+                  <li>1 frozen banana</li>
+                  <li>1/4 cup almond milk</li>
+                  <li>Toppings: kiwi, granola, coconut flakes, chia seeds</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Blend frozen strawberries, banana, and almond milk until thick and smooth.</li>
+                  <li>Add more milk one tablespoon at a time if needed.</li>
+                  <li>Pour into a bowl.</li>
+                  <li>Arrange toppings decoratively and serve immediately.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-9">View Recipe</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <p><strong>Sweet &amp; Wholesome</strong> • Healthy Dessert Recipes</p>
+        <p>Made with real ingredients for a naturally sweet life.</p>
+      </div>
     </footer>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -1,12 +1,10 @@
-// DOM Elements
-const recipeGrid = document.querySelector('.grid');
-const searchInput = document.querySelector('#search');
+const recipecontent = document.querySelector('.grid');
+const searchbar = document.querySelector('#search');
 const searchButton = document.querySelector('#searchButton');
 
-// Close all expanded recipes (accordion behavior)
 function closeAllRecipes() {
   const allExtraContent = document.querySelectorAll('.extra-content.open');
-  const allButtons = document.querySelectorAll('.toggle-btn');
+  const allButtons = document.querySelectorAll('.view-btn');
   
   allExtraContent.forEach(content => {
     content.classList.remove('open');
@@ -18,9 +16,8 @@ function closeAllRecipes() {
   });
 }
 
-// Handle toggle button clicks with accordion behavior
-function handleToggle(event) {
-  const button = event.target.closest('.toggle-btn');
+function handleView(event) {
+  const button = event.target.closest('.view-btn');
   if (!button) return;
 
   const targetId = button.dataset.target;
@@ -35,17 +32,15 @@ function handleToggle(event) {
     card.classList.remove('expanded');
     button.textContent = 'View Recipe';
   } else {
-    // Close all other recipes first (accordion)
     closeAllRecipes();
     
-    // Open this recipe
     details.classList.add('open');
     card.classList.add('expanded');
     button.textContent = 'View Less';
   }
 }
 
-// Filter recipes based on search
+// search bar filtering
 function filterRecipes(searchTerm) {
   const cards = document.querySelectorAll('.recipe-card');
   const normalized = searchTerm.trim().toLowerCase();
@@ -76,7 +71,7 @@ function filterRecipes(searchTerm) {
       noResultsMsg = document.createElement('div');
       noResultsMsg.className = 'no-results';
       noResultsMsg.style.cssText = 'grid-column: 1 / -1; padding: 2rem; text-align: center;';
-      recipeGrid.appendChild(noResultsMsg);
+      recipe.appendChild(noResultsMsg);
     }
     noResultsMsg.textContent = 'No recipes match your search. Try a different name.';
   } else {
@@ -87,53 +82,16 @@ function filterRecipes(searchTerm) {
   }
 }
 
-// Event Listeners
-searchInput.addEventListener('input', (e) => {
+searchbar.addEventListener('input', (e) => {
   filterRecipes(e.target.value);
 });
 
 searchButton.addEventListener('click', () => {
-  filterRecipes(searchInput.value);
+  filterRecipes(searchbar.value);
 });
 
-recipeGrid.addEventListener('click', handleToggle);
+recipecontent.addEventListener('click', handleView);
 
-// Initialize - make all cards visible
 document.querySelectorAll('.recipe-card').forEach(card => {
   card.classList.add('visible');
 });
-
-
-document.querySelectorAll('.card-image[data-video]').forEach(container => {
-  container.addEventListener('click', () => {
-    const videoURL = container.dataset.video.replace('embed/', 'watch?v=');
-    window.open(videoURL, '_blank');
-  });
-});
-
-document.querySelectorAll('.card-image[data-video]').forEach(container => {
-  container.addEventListener('click', () => {
-    const videoURL = container.dataset.video.replace('embed/', 'watch?v=');
-    window.open(videoURL, '_blank');
-  });
-});
-
-
-
-const themeBtn = document.getElementById('theme-toggle');
-
-const applyTheme = (theme) => {
-  document.documentElement.setAttribute('data-theme', theme);
-  localStorage.setItem('user-theme', theme);
-  if(themeBtn) themeBtn.textContent = theme === 'light' ? 'Dark Mode' : 'Light Mode';
-}
-
-// Load saved theme immediately
-applyTheme(localStorage.getItem('user-theme') || 'light');
-
-if(themeBtn) {
-  themeBtn.addEventListener('click', () => {
-    const newTheme = document.documentElement.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
-    applyTheme(newTheme);
-  });
-}

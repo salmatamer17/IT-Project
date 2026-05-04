@@ -1,35 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy food</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Drinks Recipes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Register</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="breakfast.html">Breakfast</a></li>
-                <li><a href="lunch.html">Lunch</a></li>
-                <li><a href="dinner.html">Dinner</a></li>
-                <li><a href="desert.html">Desert</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
+      <div class="container navbar">
+        <div class="brand">
+          <div>
+            <div>Healthy Drinks</div>
+            <small>Fresh recipes for every mood</small>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#recipes">Recipes</a>
+          <a href="home.html">Home</a>
+          <a href="contact-us.html">Contact</a>
         </nav>
+      </div>
     </header>
 
-    <main>
-        </main>
+    <main class="main-content">
+     <section class="header-section">
+      <h1>Healthy Drinks Recipes</h1>
+        <p>Discover a wide variety of healthy drinks recipes, from smoothies and juices to teas and cocktails. Use the search bar to find easy drink ideas with fresh flavors and simple prep.</p>
 
-    <footer>
-        <p>&copy; 2026 IT Project</p>
+        <div class="search-bar">
+          <input id="search" type="search" placeholder="Search varied drinks recipes..."/>
+          <button id="searchButton" type="button">Search</button>
+        </div>
+      </section>
+
+      <section id="recipes" class="grid">
+        <!-- Recipe 1 -->
+        <article class="recipe-card" data-recipe-id="1">
+          <div class="card-image">
+            <img src="https://thebeast.com/cdn/shop/articles/Oat_Berry_Harmony_Smoothie-133529-626567_4ae2377c-7228-4d73-a1b7-2f079e8e8f5e-3948838.png?v=1758113470&width=480" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">enrgizing</span>
+            </div>
+            <h2 class="card-title">Berry Oat Smoothie</h2>
+            <p class="card-subtitle">A refreshing blend of fresh berries and creamy oats for a healthy breakfast or snack.</p>
+            <div class="extra-content" id="details-1">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>2 cup frozen mixed berries</li>
+                  <li>1 cup rolled oats</li>
+                  <li>1 cup almond milk</li>
+                  <li>1 tablespoon honey</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Combine all ingredients in a blender and blend until smooth.</li>
+                  <li>Pour into glasses and serve immediately.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="view-btn" type="button" data-target="details-1">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 2 -->
+        <article class="recipe-card" data-recipe-id="2">
+          <div class="card-image">
+            <img src="https://t3.ftcdn.net/jpg/00/95/82/04/240_F_95820402_nvMKdWxL3IBfNxqw6ab3fCd2vumzZLdD.jpg" alt="Ginger Green Tea" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">hotdrink</span>
+            </div>
+            <h2 class="card-title">Ginger Green Tea</h2>
+            <p class="card-subtitle">A warming blend of fresh ginger and green tea for a soothing beverage.</p>
+            <div class="extra-content" id="details-2">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 green tea bag</li>
+                  <li>1 inch fresh ginger, sliced</li>
+                  <li>1 cup hot water</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Place the green tea bag and ginger slices in a cup.</li>
+                  <li>Pour hot water over the ingredients.</li>
+                  <li>Steep for 3-5 minutes.</li>
+                  <li>Remove the tea bag and ginger slices.</li>
+                  <li>Serve hot.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="view-btn" type="button" data-target="details-2">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 3 -->
+        <article class="recipe-card" data-recipe-id="3">
+          <div class="card-image">
+            <img src="https://thebalancednutritionist.com/wp-content/uploads/2023/02/detox-island-green-smoothie-1-683x1024.jpg" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">fresh</span>
+            </div>
+            <h2 class="card-title">Tropical Green Detox</h2>
+            <p class="card-subtitle">a refreshing blend of tropical fruits and green vegetables for a revitalizing drink.</p>
+            <div class="extra-content" id="details-3">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 cup fresh spinach</li>
+                  <li>1 cup pineapple chunks</li>
+                  <li>4 cup coconut water</li>
+                  <li>1 cup cucumber, diced</li>
+                  <li>1/2 squeez of fresh lemon</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Combine all ingredients in a blender and blend until smooth.</li>
+                  <li>Pour into glasses and serve immediately.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="view-btn" type="button" data-target="details-3">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 4-->
+        <article class="recipe-card" data-recipe-id="4">
+          <div class="card-image">
+            <img src="https://minimalistbaker.com/wp-content/uploads/2019/06/DETOXIFYING-Lemon-Ginger-Water-Ready-in-5-minutes-minimal-ignredients-the-perefct-way-to-start-the-day.-glutenfree-plantbased-lemon-detox-morning-minimalistbaker_-22-768x1152.jpg" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">relaxing</span>
+            </div>
+            <h2 class="card-title">lemon ginger juice</h2>
+            <p class="card-subtitle">A refreshing blend of lemon and ginger for a soothing drink.</p>
+            <div class="extra-content" id="details-4">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 liter of cold water</li>
+                  <li>1 lemon, thinly sliced</li>
+                  <li>1 inch fresh ginger, sliced</li>
+                  <li>1/2 fresh mint leaves</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>add lemon, ginger, and mint to the cold water.</li>
+                  <li>fill with water and stir well.</li>
+                  <li>refrigerate for at least 30 minutes before serving.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="view-btn" type="button" data-target="details-4">View Recipe</button>
+          </div>
+        </article>
+
+        <!-- Recipe 5 -->
+        <article class="recipe-card" data-recipe-id="5">
+          <div class="card-image">
+            <img src="https://cdn2.foodviva.com/static-content/food-images/juice-recipes/beetroot-juice-recipe/beetroot-juice-recipe.jpg" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">nutritious</span>
+            </div>
+            <h2 class="card-title">beetroot Apple juice</h2>
+            <p class="card-subtitle">A refreshing blend of beetroot and apple for a healthy drink.</p>
+            <div class="extra-content" id="details-5">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 medium beetroot, peeled and chopped</li>
+                  <li>2 green apples</li>
+                  <li>1 large carrots</li>
+                  <li>1 inch fresh ginger, sliced</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>wash and chop all the vegetables and fruits</li>
+                  <li>pass all through a juicer </li>
+                  <li>serve chilled over ice if desired</li>
+                </ol>
+              </div>
+            </div>
+            <button class="view-btn" type="button" data-target="details-5">View Recipe</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <p>Healthy Dinner Recipes • Crafted with nourishing ingredients and balanced flavors.</p>
+        <p>Enjoy wholesome meals designed for a healthier lifestyle.</p>
+      </div>
     </footer>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

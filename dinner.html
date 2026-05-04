@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Healthy Dinner Recipes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,7 +15,7 @@
             <small>Fresh recipes for every mood</small>
           </div>
         </div>
-        <nav class="nav-links"> <button id="theme-toggle" class="theme-btn">Dark Mode</button>
+        <nav class="nav-links">
           <a href="#recipes">Recipes</a>
           <a href="home.html">Home</a>
           <a href="contact-us.html">Contact</a>
@@ -26,19 +23,19 @@
       </div>
     </header>
 
-    <main class="container">
-      <section class="hero">
-        <h1>Healthy Dinner Recipes</h1>
+    <main class="main-content">
+     <section class="header-section">
+      <h1>Healthy Dinner Recipes</h1>
         <p>Discover a wide variety of healthy dinner recipes, from one-pan meals and stir-fries to bowls and soups. Use the search bar to find easy dinner ideas with fresh flavors and simple prep.</p>
 
         <div class="search-bar">
-          <input id="search" type="search" placeholder="Search varied dinner recipes..." aria-label="Search varied dinner recipes" />
+          <input id="search" type="search" placeholder="Search varied dinner recipes..."/>
           <button id="searchButton" type="button">Search</button>
         </div>
       </section>
 
-      <section id="recipes" class="grid" aria-live="polite">
-        <!-- Recipe 1: One-Pan Lemon Herb Chicken -->
+      <section id="recipes" class="grid">
+        <!-- Recipe 1 -->
         <article class="recipe-card" data-recipe-id="1">
           <div class="card-image">
             <img src="https://www.lecremedelacrumb.com/wp-content/uploads/2021/03/one-pot-lemon-herb-chicken-rice-6sm-4.jpg" alt="One-Pan Lemon Herb Chicken" loading="lazy" />
@@ -71,11 +68,11 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-1">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-1">View Recipe</button>
           </div>
         </article>
 
-        <!-- Recipe 2: Garlic Shrimp & Veggie Skillet -->
+        <!-- Recipe 2 -->
         <article class="recipe-card" data-recipe-id="2">
           <div class="card-image">
             <img src="https://ketocookingchristian.com/wp-content/uploads/2023/08/Garlic-Butter-Shrimp-and-Veggies-Skillet1-scaled.jpg" alt="Garlic Shrimp & Veggie Skillet" loading="lazy" />
@@ -108,11 +105,11 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-2">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-2">View Recipe</button>
           </div>
         </article>
 
-        <!-- Recipe 3: Turkey Taco Salad Bowl -->
+        <!-- Recipe 3 -->
         <article class="recipe-card" data-recipe-id="3">
           <div class="card-image">
             <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/Turkey-Taco-Salad_exps167536_SD2847494D02_15_5bC_RMS-2.jpg?fit=750%2C750" alt="Turkey Taco Salad Bowl" loading="lazy" />
@@ -145,11 +142,11 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-3">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-3">View Recipe</button>
           </div>
         </article>
 
-        <!-- Recipe 4: Roasted Veggie Buddha Bowl -->
+        <!-- Recipe 4-->
         <article class="recipe-card" data-recipe-id="4">
           <div class="card-image">
             <img src="https://san-j.com/wp-content/uploads/2020/09/roasted_vegetable_buddha_bowl_fb-7830.jpg" alt="Roasted Veggie Buddha Bowl" loading="lazy" />
@@ -182,11 +179,11 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-4">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-4">View Recipe</button>
           </div>
         </article>
 
-        <!-- Recipe 5: Beef & Broccoli Stir Fry -->
+        <!-- Recipe 5 -->
         <article class="recipe-card" data-recipe-id="5">
           <div class="card-image">
             <img src="https://www.dinneratthezoo.com/wp-content/uploads/2017/10/beef-and-broccoli-stir-fry-14.jpg" alt="Beef & Broccoli Stir Fry" loading="lazy" />
@@ -219,11 +216,11 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-5">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-5">View Recipe</button>
           </div>
         </article>
 
-        <!-- Recipe 6: Creamy Mushroom Farro -->
+        <!-- Recipe 6 -->
         <article class="recipe-card" data-recipe-id="6">
           <div class="card-image">
             <img src="https://www.abeautifulplate.com/wp-content/uploads/2019/01/easy-mushroom-farro-risotto-1-6-1024x1536.jpg" alt="Creamy Mushroom Farro" loading="lazy" />
@@ -256,11 +253,11 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-6">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-6">View Recipe</button>
           </div>
         </article>
 
-        <!-- Recipe 7: Lentil Tomato Stew -->
+        <!-- Recipe 7-->
         <article class="recipe-card" data-recipe-id="7">
           <div class="card-image">
             <img src="https://media.soscuisine.com/images/recettes/large/2059.jpg" alt="Lentil Tomato Stew" loading="lazy" />
@@ -293,11 +290,11 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-7">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-7">View Recipe</button>
           </div>
         </article>
 
-        <!-- Recipe 8: Sweet Potato & Black Bean Enchiladas -->
+        <!-- Recipe 8-->
         <article class="recipe-card" data-recipe-id="8">
           <div class="card-image">
             <img src="https://www.connoisseurusveg.com/wp-content/uploads/2025/09/sweet-potato-black-bean-enchiladas-11.jpg" alt="Sweet Potato & Black Bean Enchiladas" loading="lazy" />
@@ -330,11 +327,11 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-8">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-8">View Recipe</button>
           </div>
         </article>
 
-        <!-- Recipe 9: Thai Basil Chicken -->
+        <!-- Recipe 9-->
         <article class="recipe-card" data-recipe-id="9">
           <div class="card-image">
             <img src="https://therecipecritic.com/wp-content/uploads/2023/02/thaibasilchicken-667x1000.jpg" alt="Thai Basil Chicken" loading="lazy" />
@@ -367,11 +364,11 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-9">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-9">View Recipe</button>
           </div>
         </article>
 
-        <!-- Recipe 10: Chickpea & Spinach Curry -->
+        <!-- Recipe 10-->
         <article class="recipe-card" data-recipe-id="10">
           <div class="card-image">
             <img src="https://www.currytrail.in/wp-content/uploads/2017/01/Chickpea-potato-spinach-curry-1-.jpg" alt="Chickpea & Spinach Curry" loading="lazy" />
@@ -404,7 +401,7 @@
                 </ol>
               </div>
             </div>
-            <button class="toggle-btn" type="button" data-target="details-10">View Recipe</button>
+            <button class="view-btn" type="button" data-target="details-10">View Recipe</button>
           </div>
         </article>
       </section>
@@ -420,7 +417,4 @@
     <script src="script.js"></script>
   </body>
 </html>
->
 
-</body>
-</html>

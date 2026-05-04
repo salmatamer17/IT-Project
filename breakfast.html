@@ -1,35 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy food</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Breakfast Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Register</a></li>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="breakfast.html">Breakfast</a></li>
-                <li><a href="lunch.html">Lunch</a></li>
-                <li><a href="dinner.html">Dinner</a></li>
-                <li><a href="desert.html">Desert</a></li>
-                <li><a href="drinks.html">Drinks</a></li>
-                <li><a href="contact-us.html">Contact Us</a></li>
-            </ul>
+      <div class="container navbar">
+        <div class="brand">
+          <div>
+            <div>Healthy Breakfast</div>
+            <small>Fresh recipes for every mood</small>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <button id="theme-toggle" class="theme-btn">Dark Mode</button>
+          <a href="#recipes">Recipes</a>
+          <a href="home.html">Home</a>
+          <a href="contact-us.html">Contact</a>
         </nav>
+      </div>
     </header>
-
-    <main>
-        </main>
-
-    <footer>
-        <p>&copy; 2026 IT Project</p>
+    <main class="container">
+      <section class="hero">
+        <h1>Healthy Breakfast Recipes</h1>
+        <p>Discover a wide variety of healthy breakfast recipes, from smoothie bowls and overnight oats to egg dishes and avocado toasts. Use the search bar to find easy breakfast ideas with fresh flavors and simple prep.</p>
+        <div class="search-bar">
+          <input id="search" type="search" placeholder="Search varied breakfast recipes..." aria-label="Search varied breakfast recipes" />
+          <button id="searchButton" type="button">Search</button>
+        </div>
+      </section>
+      <section id="recipes" class="grid" aria-live="polite">
+        <article class="recipe-card" data-recipe-id="1">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=800" alt="Avocado Toast with Poached Eggs" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Quick</span>
+            </div>
+            <h2 class="card-title">Avocado Toast with Poached Eggs</h2>
+            <p class="card-subtitle">Creamy avocado spread on whole grain toast topped with perfectly poached eggs and chili flakes.</p>
+            <div class="extra-content" id="details-1">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>2 slices whole grain bread</li>
+                  <li>1 ripe avocado</li>
+                  <li>2 eggs</li>
+                  <li>1 tbsp lemon juice</li>
+                  <li>1/2 tsp chili flakes</li>
+                  <li>Salt and pepper to taste</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Toast bread until golden and crispy.</li>
+                  <li>Mash avocado with lemon juice, salt, and pepper.</li>
+                  <li>Poach eggs in simmering water for 3-4 minutes.</li>
+                  <li>Spread avocado on toast, top with eggs and chili flakes.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-1">View Recipe</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-recipe-id="2">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1571748982800-fa51082c2224?w=800" alt="Overnight Oats with Berries" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Meal Prep</span>
+            </div>
+            <h2 class="card-title">Overnight Oats with Berries</h2>
+            <p class="card-subtitle">Creamy oats soaked overnight with chia seeds, topped with fresh mixed berries and honey.</p>
+            <div class="extra-content" id="details-2">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1/2 cup rolled oats</li>
+                  <li>1 cup almond milk</li>
+                  <li>1 tbsp chia seeds</li>
+                  <li>1 cup mixed berries</li>
+                  <li>1 tbsp honey</li>
+                  <li>1/4 tsp vanilla extract</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Mix oats, almond milk, chia seeds, and vanilla in a jar.</li>
+                  <li>Stir well and refrigerate overnight.</li>
+                  <li>In the morning, top with fresh berries.</li>
+                  <li>Drizzle honey and serve chilled.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-2">View Recipe</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-recipe-id="3">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=800" alt="Greek Yogurt Smoothie Bowl" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Bowl</span>
+            </div>
+            <h2 class="card-title">Greek Yogurt Smoothie Bowl</h2>
+            <p class="card-subtitle">A thick, creamy yogurt bowl loaded with granola, sliced bananas, and fresh fruit toppings.</p>
+            <div class="extra-content" id="details-3">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 cup Greek yogurt</li>
+                  <li>1/2 cup frozen mango chunks</li>
+                  <li>1 banana, sliced</li>
+                  <li>1/4 cup granola</li>
+                  <li>1 tbsp almond butter</li>
+                  <li>1 tbsp flaxseeds</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Blend yogurt and frozen mango until smooth and thick.</li>
+                  <li>Pour into a bowl.</li>
+                  <li>Top with banana slices, granola, and flaxseeds.</li>
+                  <li>Drizzle almond butter and serve immediately.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-3">View Recipe</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-recipe-id="4">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800" alt="Veggie Egg Muffins" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">High Protein</span>
+            </div>
+            <h2 class="card-title">Veggie Egg Muffins</h2>
+            <p class="card-subtitle">Fluffy baked egg cups loaded with colorful vegetables — perfect for grab-and-go mornings.</p>
+            <div class="extra-content" id="details-4">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>6 large eggs</li>
+                  <li>1/2 cup diced bell peppers</li>
+                  <li>1/4 cup diced onion</li>
+                  <li>1/2 cup baby spinach</li>
+                  <li>1/4 cup shredded cheese</li>
+                  <li>Salt and pepper to taste</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Preheat oven to 375°F and grease a muffin tin.</li>
+                  <li>Whisk eggs with salt and pepper.</li>
+                  <li>Divide veggies into muffin cups and pour egg mixture over.</li>
+                  <li>Top with cheese and bake for 18-20 minutes.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-4">View Recipe</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-recipe-id="5">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?w=800" alt="Banana Oat Pancakes" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Gluten-Free</span>
+            </div>
+            <h2 class="card-title">Banana Oat Pancakes</h2>
+            <p class="card-subtitle">Fluffy two-ingredient pancakes made with ripe bananas and oats — naturally sweet and filling.</p>
+            <div class="extra-content" id="details-5">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>2 ripe bananas</li>
+                  <li>2 eggs</li>
+                  <li>1/2 cup rolled oats</li>
+                  <li>1/2 tsp cinnamon</li>
+                  <li>1 tsp baking powder</li>
+                  <li>Fresh fruit to serve</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Blend bananas, eggs, oats, cinnamon, and baking powder.</li>
+                  <li>Heat a non-stick pan over medium heat.</li>
+                  <li>Pour small circles and cook 2-3 minutes per side.</li>
+                  <li>Serve with fresh fruit or maple syrup.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-5">View Recipe</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-recipe-id="6">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1546039907-7fa05f864c02?w=800" alt="Chia Seed Pudding" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Vegan</span>
+            </div>
+            <h2 class="card-title">Chia Seed Pudding</h2>
+            <p class="card-subtitle">A rich, creamy pudding made with chia seeds and coconut milk, topped with mango and kiwi.</p>
+            <div class="extra-content" id="details-6">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>3 tbsp chia seeds</li>
+                  <li>1 cup coconut milk</li>
+                  <li>1 tbsp maple syrup</li>
+                  <li>1/2 tsp vanilla extract</li>
+                  <li>1/2 mango, diced</li>
+                  <li>1 kiwi, sliced</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Mix chia seeds, coconut milk, maple syrup, and vanilla.</li>
+                  <li>Stir well and refrigerate for at least 4 hours.</li>
+                  <li>Stir again before serving.</li>
+                  <li>Top with mango and kiwi slices.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-6">View Recipe</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-recipe-id="7">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1510693206972-df098062cb71?w=800" alt="Spinach & Feta Omelette" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Keto</span>
+            </div>
+            <h2 class="card-title">Spinach & Feta Omelette</h2>
+            <p class="card-subtitle">A fluffy omelette filled with wilted spinach, crumbled feta, and fresh herbs for a savory start.</p>
+            <div class="extra-content" id="details-7">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>3 large eggs</li>
+                  <li>1 cup baby spinach</li>
+                  <li>1/4 cup crumbled feta cheese</li>
+                  <li>1 tbsp butter</li>
+                  <li>1 tbsp fresh dill</li>
+                  <li>Salt and pepper to taste</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Whisk eggs with salt and pepper.</li>
+                  <li>Melt butter in a pan over medium heat.</li>
+                  <li>Pour in eggs and cook until just set.</li>
+                  <li>Add spinach, feta, and dill; fold and serve.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-7">View Recipe</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-recipe-id="8">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?w=800" alt="Acai Berry Smoothie Bowl" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Antioxidant</span>
+            </div>
+            <h2 class="card-title">Acai Berry Smoothie Bowl</h2>
+            <p class="card-subtitle">A vibrant purple acai bowl packed with berries, coconut flakes, and crunchy granola.</p>
+            <div class="extra-content" id="details-8">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>1 packet frozen acai puree</li>
+                  <li>1/2 cup frozen blueberries</li>
+                  <li>1/2 banana</li>
+                  <li>1/4 cup almond milk</li>
+                  <li>1/4 cup granola</li>
+                  <li>2 tbsp coconut flakes</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Blend acai, blueberries, banana, and almond milk until thick.</li>
+                  <li>Pour into a bowl — it should be spoonable, not drinkable.</li>
+                  <li>Top with granola and coconut flakes.</li>
+                  <li>Add fresh fruit and serve immediately.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-8">View Recipe</button>
+          </div>
+        </article>
+        <article class="recipe-card" data-recipe-id="9">
+          <div class="card-image">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800" alt="Whole Wheat French Toast" loading="lazy" />
+          </div>
+          <div class="card-content">
+            <div class="card-meta">
+              <span class="badge">Comfort</span>
+            </div>
+            <h2 class="card-title">Whole Wheat French Toast</h2>
+            <p class="card-subtitle">Golden whole wheat French toast with cinnamon egg batter, served with fresh strawberries and yogurt.</p>
+            <div class="extra-content" id="details-9">
+              <div class="recipe-section">
+                <h4>Ingredients</h4>
+                <ul>
+                  <li>4 slices whole wheat bread</li>
+                  <li>2 eggs</li>
+                  <li>1/4 cup milk</li>
+                  <li>1/2 tsp cinnamon</li>
+                  <li>1 tsp vanilla extract</li>
+                  <li>Fresh strawberries to serve</li>
+                </ul>
+              </div>
+              <div class="recipe-section">
+                <h4>Preparation</h4>
+                <ol>
+                  <li>Whisk eggs, milk, cinnamon, and vanilla together.</li>
+                  <li>Dip bread slices into the egg mixture.</li>
+                  <li>Cook on a buttered pan over medium heat until golden on both sides.</li>
+                  <li>Serve with fresh strawberries and a dollop of yogurt.</li>
+                </ol>
+              </div>
+            </div>
+            <button class="toggle-btn" type="button" data-target="details-9">View Recipe</button>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="container">
+        <p>Healthy Breakfast Recipes • Crafted with nourishing ingredients and balanced flavors.</p>
+        <p>Enjoy wholesome meals designed for a healthier lifestyle.</p>
+      </div>
     </footer>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

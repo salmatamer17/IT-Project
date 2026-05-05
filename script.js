@@ -4,7 +4,7 @@ const searchButton = document.querySelector('#searchButton');
 
 function closeAllRecipes() {
   const allExtraContent = document.querySelectorAll('.extra-content.open');
-  const allButtons = document.querySelectorAll('.toggle-btn');
+const allButtons = document.querySelectorAll('.view-btn');
   
   allExtraContent.forEach(content => {
     content.classList.remove('open');
@@ -17,7 +17,7 @@ function closeAllRecipes() {
 }
 
 function handleView(event) {
-  const button = event.target.closest('.toggle-btn');
+  const button = event.target.closest('.view-btn');
   if (!button) return;
 
   const targetId = button.dataset.target;
@@ -26,7 +26,6 @@ function handleView(event) {
   
   if (!details || !card) return;
 
-  // If clicking the same button that's already open, toggle it off
   if (details.classList.contains('open')) {
     details.classList.remove('open');
     card.classList.remove('expanded');

@@ -1,5 +1,5 @@
 
-/* DINNER PAGE */
+/* Dinner page */
 
 * {
   box-sizing: border-box;
@@ -261,7 +261,7 @@ main {
   margin-bottom: 0.6rem;
 }
 
-.view-btn {
+.view-btn, .toggle-btn {
   width: 100%;
   border: none;
   margin-top: auto;
@@ -275,13 +275,13 @@ main {
   box-shadow: 0 4px 12px rgba(110, 71, 59, 0.1);
 }
 
-.view-btn:hover {
+.view-btn:hover, .toggle-btn:hover {
   background: #8e7a69;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(110, 71, 59, 0.2);
 }
 
-.view-btn:active {
+.view-btn:active, .toggle-btn:active {
   transform: translateY(0);
 }
 

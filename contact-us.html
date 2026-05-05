@@ -23,10 +23,10 @@
         padding: 0 0 3rem;
       }
       header {
-        background: #291C0E;
-        color: #fff;
-        padding: 1rem 0;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+       background: #291C0E;
+       color: #fff;
+       padding: 1rem 0;
+       box-shadow: 0 10px 30px rgba(0,0,0,0.15);
       }
       .navbar {
         display: flex;
@@ -142,9 +142,9 @@
         letter-spacing: -0.02em;
       }
       .form-card .sub {
-        color: var(--muted);
-        font-size: 0.95rem;
-        margin-bottom: 2rem;
+       color: #5A4A3E;
+       font-size: 0.95rem;
+       margin-bottom: 2rem;
       }
       .form-row {
         display: grid;
@@ -160,7 +160,7 @@
       .field label {
         font-size: 0.85rem;
         font-weight: 600;
-        color: var(--text);
+        color:#33220F;
         letter-spacing: 0.02em;
       }
       .field input,
@@ -171,7 +171,7 @@
         padding: 0.85rem 1.1rem;
         font-size: 0.97rem;
         font-family: inherit;
-        color: var(--text);
+        color: #33220F;
         background: #faf8f5;
         transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
         outline: none;
@@ -237,7 +237,7 @@
 }
       [data-theme="dark"] .field textarea {
         background: #1a1410;
-        border-color: #3a2d24;
+       border-color: #3a2d24;
         color:  #D1C7BD;
       }
       [data-theme="dark"] .field label { color:  #D1C7BD; }
@@ -361,12 +361,26 @@
       </div>
     </footer>
     <script>
-      const toggleBtn = document.getElementById('theme-toggle');
+       const savedTheme = localStorage.getItem('theme');
+
+  if (savedTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'dark');
+  }
+
+  const toggleBtn = document.getElementById('theme-toggle');
       toggleBtn.addEventListener('click', () => {
-        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-        document.documentElement.setAttribute('data-theme', isDark ? '' : 'dark');
-        toggleBtn.textContent = isDark ? 'Dark Mode' : 'Light Mode';
-      });
+       const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    localStorage.setItem('theme', 'light');
+    toggleBtn.textContent = 'Dark Mode';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
+    toggleBtn.textContent = 'Light Mode';
+  }
+});
       document.getElementById('send-btn').addEventListener('click', () => {
         const fname   = document.getElementById('fname').value.trim();
         const email   = document.getElementById('email').value.trim();

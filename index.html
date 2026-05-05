@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
+=======
+ <!DOCTYPE html>
+>>>>>>> 000a532fe08dfedbf91cb0c302674549d090dbf7
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Register | Healthy Food Recipes</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -68,5 +73,76 @@
 
 
     
+=======
+    <title>Register | Healthy Food</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .register-box { max-width: 430px; margin: 60px auto; }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input { width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 16px; box-sizing: border-box; }
+        .error-msg { color: red; font-size: 12px; display: block; margin-top: 5px; min-height: 15px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar main-content">
+        <div class="brand"><span>Healthy Food</span></div>
+    </nav>
+</header>
+
+<main class="main-content">
+    <section class="recipe-card register-box">
+        <div class="card-content">
+            <h2 class="card-title">Register Now</h2>
+            <form id="registerForm" novalidate>
+                <div class="form-group">
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" placeholder="User Name">
+                    <span class="error-msg" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Email Address">
+                    <span class="error-msg" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <span class="error-msg" id="passError"></span>
+                </div>
+
+                <button class="view-btn" type="submit" style="width:100%">Register</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Healthy Food Recipes</p>
+</footer>
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  localStorage.setItem("user", JSON.stringify({
+    username,
+    email,
+    password
+  }));
+
+  localStorage.setItem("isLoggedIn", "true");
+
+  window.location.href = "home.html";
+});
+</script>
+>>>>>>> 000a532fe08dfedbf91cb0c302674549d090dbf7
 </body>
 </html>

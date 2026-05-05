@@ -70,7 +70,7 @@ function filterRecipes(searchTerm) {
       noResultsMsg = document.createElement('div');
       noResultsMsg.className = 'no-results';
       noResultsMsg.style.cssText = 'grid-column: 1 / -1; padding: 2rem; text-align: center;';
-      recipe.appendChild(noResultsMsg);
+      recipecontent.appendChild(noResultsMsg);
     }
     noResultsMsg.textContent = 'No recipes match your search. Try a different name.';
   } else {
@@ -93,4 +93,26 @@ recipecontent.addEventListener('click', handleView);
 
 document.querySelectorAll('.recipe-card').forEach(card => {
   card.classList.add('visible');
+});
+
+// Dark mode toggle
+const themeToggle = document.querySelector('#theme-toggle');
+
+if (localStorage.getItem('theme') === 'dark') {
+  document.documentElement.setAttribute('data-theme', 'dark');
+  themeToggle.textContent = 'Light Mode';
+}
+
+themeToggle.addEventListener('click', () => {
+  const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+  
+  if (isDark) {
+    document.documentElement.removeAttribute('data-theme');
+    themeToggle.textContent = 'Dark Mode';
+    localStorage.setItem('theme', 'light');
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    themeToggle.textContent = 'Light Mode';
+    localStorage.setItem('theme', 'dark');
+  }
 });

@@ -341,8 +341,6 @@ footer a {
   --container-layout: row; 
 }
 
-
-
 /* Dark Mode using Forest/Olive palette */
 [data-theme="dark"] {
   --dark-brown: #31251b; 
@@ -373,6 +371,8 @@ footer a {
 }
 
 [data-theme="dark"] body {
-  background: var(--bg);
+  background: #080705;
+  color: #D1C7BD;
+  filter: brightness(0.85);
 }
 

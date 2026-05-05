@@ -116,3 +116,61 @@ themeToggle.addEventListener('click', () => {
     localStorage.setItem('theme', 'dark');
   }
 });
+
+// Register Form Validation and Submission
+const registerForm = document.getElementById("registerForm");
+
+if (registerForm) {
+    registerForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        const fullName = document.getElementById("fullName").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value.trim();
+
+        const nameError = document.getElementById("nameError");
+        const emailError = document.getElementById("emailError");
+        const passError = document.getElementById("passError");
+
+        let isValid = true;
+
+        if (fullName === "") {
+            nameError.textContent = "Please enter your name";
+            isValid = false;
+        } else if (fullName.length < 3) {
+            nameError.textContent = "Name must be at least 3 characters";
+            isValid = false;
+        } else {
+            nameError.textContent = "";
+        }
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email === "") {
+            emailError.textContent = "Please enter your email";
+            isValid = false;
+        } else if (!emailPattern.test(email)) {
+            emailError.textContent = "Please enter a valid email address";
+            isValid = false;
+        } else {
+            emailError.textContent = "";
+        }
+
+        if (password === "") {
+            passError.textContent = "Please enter your password";
+            isValid = false;
+        } else if (password.length < 6) {
+            passError.textContent = "Password must be at least 6 characters";
+            isValid = false;
+        } else {
+            passError.textContent = "";
+        }
+
+        if (isValid) {
+            localStorage.setItem("userName", fullName);
+            localStorage.setItem("userEmail", email);
+
+            alert("Registration successful! Welcome, " + fullName);
+            window.location.href = "home.html";
+        }
+    });
+}

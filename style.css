@@ -375,4 +375,14 @@ footer a {
   color: #D1C7BD;
   filter: brightness(0.85);
 }
-
+.theme-btn:hover { background: rgba(255,255,255,0.12); }
+ .theme-btn {
+        border: 1px solid rgba(255,255,255,0.35);
+        border-radius: 999px;
+        padding: 0.4rem 1rem;
+        background: transparent;
+        color: #fff;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: background 0.25s ease;
+      }

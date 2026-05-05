@@ -3,70 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Healthy Food Recipes</title>
+    <title>Register | Healthy Food</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .register-box { max-width: 430px; margin: 60px auto; }
+        .form-group { margin-bottom: 15px; text-align: left; }
+        .form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .form-group input { width: 100%; padding: 14px; border: 1px solid #ddd; border-radius: 16px; box-sizing: border-box; }
+        .error-msg { color: red; font-size: 12px; display: block; margin-top: 5px; min-height: 15px; }
+    </style>
 </head>
-
-
-
-
-    
 <body>
+
 <header>
     <nav class="navbar main-content">
-        <div class="brand">
-            <span>Healthy Food Recipes</span>
-        </div>
-
+        <div class="brand"><span>Healthy Food</span></div>
         <div class="nav-links">
             <a href="home.html">Home</a>
             <a href="breakfast.html">Breakfast</a>
             <a href="lunch.html">Lunch</a>
             <a href="dinner.html">Dinner</a>
             <a href="drinks.html">Drinks</a>
+            <a href="register.html">Register</a>
         </div>
     </nav>
 </header>
 
-
-
-    
 <main class="main-content">
-    <section class="recipe-card" style="max-width: 430px; margin: 60px auto;">
+    <section class="recipe-card register-box">
         <div class="card-content">
             <h2 class="card-title">Create an Account</h2>
-            <p class="card-subtitle">Join us and discover healthy recipes.</p>
+            <form id="registerForm" novalidate>
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Full Name">
+                    <span class="error-msg" id="nameError"></span>
+                </div>
 
-            <form action="home.html">
-                <input type="text" placeholder="Full Name" required
-                    style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:16px; font-size:15px;">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" placeholder="Email Address">
+                    <span class="error-msg" id="emailError"></span>
+                </div>
 
-                <input type="email" placeholder="Email Address" required
-                    style="width:100%; padding:14px; margin-bottom:15px; border:none; border-radius:16px; font-size:15px;">
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password">
+                    <span class="error-msg" id="passError"></span>
+                </div>
 
-                <input type="password" placeholder="Password" required
-                    style="width:100%; padding:14px; margin-bottom:20px; border:none; border-radius:16px; font-size:15px;">
-
-                <button class="view-btn" type="submit">Register</button>
+                <button class="view-btn" type="submit" style="width:100%">Register</button>
             </form>
-
-            <p class="card-subtitle" style="margin-top:15px;">
-                Your journey to healthy eating starts here.
-            </p>
-
         </div>
     </section>
 </main>
 
-
-
-    
 <footer>
-    © 2026 Healthy Food Recipes
+    <p>&copy; 2026 Healthy Food Recipes</p>
 </footer>
 
-
-
-    
+<script src="script.js"></script>
 </body>
 </html>

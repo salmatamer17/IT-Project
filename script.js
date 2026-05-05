@@ -4,7 +4,7 @@ const searchButton = document.querySelector('#searchButton');
 
 function closeAllRecipes() {
   const allExtraContent = document.querySelectorAll('.extra-content.open');
-  const allButtons = document.querySelectorAll('.view-btn');
+  const allButtons = document.querySelectorAll('.toggle-btn');
   
   allExtraContent.forEach(content => {
     content.classList.remove('open');
@@ -17,7 +17,7 @@ function closeAllRecipes() {
 }
 
 function handleView(event) {
-  const button = event.target.closest('.view-btn');
+  const button = event.target.closest('.toggle-btn');
   if (!button) return;
 
   const targetId = button.dataset.target;

@@ -1,291 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthy food</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthy Lunch Recipes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
     
-</head>
-<body>
-
+  </head>
+  <body class="lunch-page">
     <header>
-        
-         <style>
-            
-            body {
-                font-family: Arial;
-                background-color: #6E473B;
-                padding: 12px;
-            }
-
-            img {
-                width: 27%;
-                border-radius: 8px;
-                
-            }
-
-            h1 {
-                font-family: cursive;
-                text-align: center;
-                padding-top: 30px;
-                padding-bottom: 30px;
-                border-radius: 10px;
-                color: white;
-            }
-
-            .recipes {
-                display: grid;
-                grid-template-columns: repeat(3,1f);
-            }
-
-            .recipe-card {
-                background-color: #c2a084;
-                border: 1px ;
-                border-radius: 12px; 
-                padding: 18px;
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 18px;
-            }
-
-            p {
-                font-size: 40px;
-                font-weight: 400;
-                color: white;
-                font-family: cursive ;
-                display: block;
-            }
-
-            .recipe-details {
-                color: white;
-                font-size: 24px;
-                display: inline-block;
-                margin: 20px;
-            }
-
-            footer {
-                text-align: center;
-                color: white;
-                padding: 10px;
-                cursor: pointer;
-            }
-
-         </style>
-
-    </header>
-
-    <main>
-        <h1>Healthy Lunches</h1>
-        <div class="recipes">
-            <div class="recipe-card">
-                <p>Lemon Herb Roasted Chicken</p>
-                <div class="content"> 
-                    <img src="images/recipe.lunch.1.jpeg">
-                    <ul class="recipe-details">
-                        <li>
-                            <h3>Ingredients:</h3>
-                            <ul>
-                                <li>Skinless chicken breasts or thighs.</li>
-                                <li>2 tbsp Olive oil, 3 cloves of minced garlic, and fresh lemon juice</li>
-                                <li>Fresh Rosemary and Thyme.</li>
-                                <li>Mixed vegetables (Broccoli, carrots, and baby potatoes).</li>
-                            </ul>
-                        </li>
-                        <li>   
-                            <h3>Instructions:</h3>
-                            <ol>
-                                <li>Marinate the chicken with garlic, lemon, olive oil, and herbs for 20 minutes.</li>
-                                <li>Place the chicken and chopped vegetables on a baking tray.</li>
-                                <li>Roast in a preheated oven at 200°C for 30-35 minutes until golden brown.</li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h3>Macros:</h3>
-                            <ul>
-                                <li>Calories: 350 kcal</li>
-                                <li>Protein: 42g</li>
-                                <li>Carbs: 12g</li>
-                                <li>Fats: 14g</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>    
-            </div>
-            <div class="recipe-card">
-                <p>Grilled Salmon & Quinoa Power Bowl</p>
-                <div class="content">
-                    <img src="images/recipe.lunch.2.jpeg">
-                    <ul class="recipe-details">
-                        <li>
-                            <h3>Ingredients:</h3>
-                            <ul>
-                                <li>Fresh Salmon fillet.</li>
-                                <li>1/2 cup cooked Quinoa</li>
-                                <li>Sliced Avocado and cherry tomatoes.</li>
-                                <li>Dressing: Honey mustard and a splash of apple cider vinegar.</li>
-                            </ul>
-                        </li>
-                        <li>   
-                            <h3>Instructions:</h3>
-                            <ol>
-                                <li>Season the salmon with salt and pepper, then grill for 4-5 minutes per side.</li>
-                                <li>Boil quinoa in water (1:2 ratio) until fluffy</li>
-                                <li>Assemble the bowl starting with quinoa, then add the grilled salmon, avocado, and drizzle with dressing</li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h3>Macros:</h3>
-                            <ul>
-                                <li>Calories: 520 kcal</li>
-                                <li>Protein: 34g</li>
-                                <li>Carbs: 45g</li>
-                                <li>Fats: 22g (Healthy Omega-3 fats)</li>
-                            </ul>
-                        </li>    
-                    </ul>
-                </div>    
-            </div>
-            <div class="recipe-card">
-                <p>Roasted Sweet Potato & Chickpea Salad</p>
-                <div class="content">
-                    <img src="images/recipe.lunch.3.jpeg" style="height: auto;">
-                    <ul class="recipe-details">
-                        <li>
-                            <h3>Ingredients:</h3>
-                            <ul>
-                                <li>1 can of Chickpeas (rinsed and drained).</li>
-                                <li>2 medium Sweet potatoes (cubed).</li>
-                                <li>Fresh Baby spinach or Arugula.</li>
-                                <li>Tahini dressing (Tahini, lemon juice, and a pinch of cumin).</li>
-                            </ul>
-                        </li>
-                        <li>   
-                            <h3>Instructions:</h3>
-                            <ol>
-                                <li>Toss sweet potato cubes in olive oil and roast at 200°C for 20 minutes.</li>
-                                <li>In a large bowl, mix the roasted potatoes with chickpeas and spinach.</li>
-                                <li>Pour the creamy tahini dressing over the salad and toss well before serving.</li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h3>Macros</h3>
-                            <ul>
-                                <li>Calories: 380 kcal</li>
-                                <li>Protein: 12g</li>
-                                <li>Carbs: 58g</li>
-                                <li>Fats: 10g</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>   
-            </div>
-            <div class="recipe-card">
-                <p>Creamy Avocado Pasta (Vegetarian)</p>
-                <div class="content">
-                    <img src="images/recipe.lunch.4.jpeg">
-                    <ul class="recipe-details">
-                        <li>
-                            <h3>Ingredients:</h3>
-                            <ul>
-                                <li>Whole wheat or gluten-free Spaghetti.</li>
-                                <li>1 Ripe Avocado, fresh basil leaves, and 2 cloves of garlic.</li>
-                                <li>Cherry tomatoes (for topping).</li>
-                                <li>Lemon juice and a splash of pasta water.</li>
-                            </ul>
-                        </li>
-                        <li>   
-                            <h3>Instructions:</h3>
-                            <ol>
-                                <li>Boil the pasta according to package instructions.</li>
-                                <li>Blend the avocado, basil, garlic, and lemon juice until smooth.</li>
-                                <li>Toss the pasta with the avocado sauce and top with fresh cherry tomatoes.</li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h3>Macros:</h3>
-                            <ul>
-                                <li>Calories: 410 kcal</li>
-                                <li>Protein: 11g</li>
-                                <li>Carbs: 52g</li>
-                                <li>Fats: 18g (Healthy Omega-3 fats)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="recipe-card"> 
-                <p>Garlic Butter Shrimp with Asparagus</p>
-                <div class="content">
-                    <img src="images/recipe.lunch.5.jpeg">
-                    <ul class="recipe-details">
-                        <li>
-                            <h3>Ingredients:</h3>
-                            <ul>
-                                <li>Large Shrimp (peeled and deveined).</li>
-                                <li>A bunch of fresh Asparagus.</li>
-                                <li>1 tbsp Butter (or Ghee), lemon zest, and red pepper flakes.</li>
-                                <li>Fresh parsley.</li>
-                            </ul>
-                        </li>
-                        <li>   
-                            <h3>Instructions:</h3>
-                            <ol>
-                                <li>Sauté asparagus in a pan with a bit of butter until tender.</li>
-                                <li>Add the shrimp and garlic, cooking for 2-3 minutes per side.</li>
-                                <li>Finish with lemon zest and chopped parsley.</li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h3>Macros:</h3>
-                            <ul>
-                                <li>Calories: 280 kcal</li>
-                                <li>Protein: 36g</li>
-                                <li>Carbs: 8g</li>
-                                <li>Fats: 12g (Healthy Omega-3 fats)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div> 
-            </div>
-            <div class="recipe-card">
-                <p>Mediterranean Quinoa Salad with Feta</p>
-                <div class="content">
-                    <img src="images/recipe.lunch.6.jpeg">
-                    <ul class="recipe-details">
-                        <li>
-                            <h3>Ingredients:</h3>
-                            <ul>
-                                <li>Cooked Quinoa.</li>
-                                <li>Cucumber, red onion, and kalamata olives.</li>
-                                <li>Low-fat Feta cheese.</li>
-                                <li>Dressing: Red wine vinegar and dried oregano.</li>
-                            </ul>
-                        </li>
-                        <li>   
-                            <h3>Instructions:</h3>
-                            <ol>
-                                <li>Chop all vegetables into small cubes.</li>
-                                <li>In a large bowl, combine quinoa, vegetables, olives, and crumbled feta.</li>
-                                <li>Whisk the dressing ingredients and pour over the salad.</li>
-                            </ol>
-                        </li>
-                        <li>
-                            <h3>Macros:</h3>
-                            <ul>
-                                <li>Calories: 320 kcal</li>
-                                <li>Protein: 14g</li>
-                                <li>Carbs: 38g</li>
-                                <li>Fats: 13g (Healthy Omega-3 fats)</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="container navbar">
+        <div class="brand">
+          <div>
+            <div>Healthy Lunch</div>
+            <small>Fresh meals to power your day</small>
+          </div>
         </div>
+        <nav class="nav-links">
+          <button id="theme-toggle" class="theme-btn">Dark Mode</button>
+          <a href="#recipes">Recipes</a>
+          <a href="home.html">Home</a>
+          <a href="contact-us.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+        <section class="hero">
+            <h1>Healthy Lunch Recipes</h1>
+            <p>Explore nutritious and delicious lunch ideas to keep you energized throughout the day.</p>
+            <div class="search-bar">
+                <input id="search" type="search" placeholder="Search lunch recipes..." />
+                <button id="searchButton">Search</button>
+            </div>
+        </section>
+        <section id="recipes" class="grid">
+          <article class="recipe-card" data-recipe-id="1">
+            <div class="card-image">
+              <img src="images/recipe.lunch.1.jpeg" alt="lemon herb roasted chicken" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span class="badge">Meat</span>
+              </div>
+              <h2 class="card-title">Lemon herb roasted chicken</h2>
+              <p class="card-subtitle">A high-protein, low-carb meal packed with fresh Mediterranean flavors.</p>
+              <div class="extra-content" id="details-1">
+                <div class="recipe-section">
+                  <h4>Ingredients</h4>
+                  <ul>
+                    <li>chicken breasts or thighs.</li>
+                    <li>2 tbsp Olive oil, 3 cloves of minced garlic, and fresh lemon juice.</li>
+                    <li>Fresh Rosemary and Thyme.</li>
+                    <li>Mixed vegetables (Broccoli, carrots, and baby potatoes).</li>
+                  </ul>
+                </div>
+                <div class="recipe-section">
+                  <h4>Preparation</h4>
+                    <ol>
+                      <li>Marinate the chicken with garlic, lemon, olive oil, and herbs for 20 minutes.</li>
+                      <li>Place the chicken and chopped vegetables on a baking tray.</li>
+                      <li>Roast in a preheated oven at 200°C for 30-35 minutes until golden brown.</li>
+                    </ol>
+                </div>
+              </div>
+              <button class="toggle-btn" type="button" data-target="details-1">View Recipe</button>
+            </div>
+          </article>
+          <article class="recipe-card" data-recipe-id="2">
+            <div class="card-image">
+              <img src="images/recipe.lunch.2.jpeg" alt="Grilled Salmon & Quinoa Power Bowl" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span class="badge">Seafood</span>
+              </div>
+              <h2 class="card-title">Grilled Salmon & Quinoa Power Bowl</h2>
+              <p class="card-subtitle">Rich in Omega-3 and fiber, perfect for a balanced healthy lunch.</p>
+              <div class="extra-content" id="details-2">
+                <div class="recipe-section">
+                  <h4>Ingredients</h4>
+                  <ul>
+                    <li>Fresh Salmon fillet.</li>
+                    <li>1/2 cup cooked Quinoa.</li>
+                    <li>Sliced Avocado and cherry tomatoes.</li>
+                    <li>Dressing: Honey mustard and a splash of apple cider vinegar.</li>
+                  </ul>
+                </div>
+                <div class="recipe-section">
+                  <h4>Preparation</h4>
+                  <ol>
+                    <li>Season the salmon with salt and pepper, then grill for 4-5 minutes per side.</li>
+                    <li>Boil quinoa in water (1:2 ratio) until fluffy.</li>
+                    <li>Assemble the bowl starting with quinoa, then add the grilled salmon, avocado, and drizzle with dressing.</li>
+                  </ol>
+                </div>
+              </div>
+              <button class="toggle-btn" type="button" data-target="details-2">View Recipe</button>
+            </div>
+          </article>
+          <article class="recipe-card" data-recipe-id="3">
+            <div class="card-image">
+              <img src="images/recipe.lunch.3.jpeg" alt="Roasted Sweet Potato & Chickpea Salad" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span class="badge">Salad</span>
+              </div>
+              <h2 class="card-title">Roasted Sweet Potato & Chickpea Salad</h2>
+              <p class="card-subtitle">A delicious vegan-friendly lunch that is both filling and nutritious.</p>
+              <div class="extra-content" id="details-3">
+                <div class="recipe-section">
+                  <h4>Ingredients</h4>
+                  <ul>
+                    <li>1 can of Chickpeas (rinsed and drained).</li>
+                    <li>2 medium Sweet potatoes (cubed).</li>
+                    <li>Fresh Baby spinach or Arugula.</li>
+                    <li>Tahini dressing (Tahini, lemon juice, and a pinch of cumin).</li>
+                  </ul>
+                </div>
+                <div class="recipe-section">
+                  <h4>Preparation</h4>
+                  <ol>
+                    <li>Toss sweet potato cubes in olive oil and roast at 200°C for 20 minutes.</li>
+                    <li>In a large bowl, mix the roasted potatoes with chickpeas and spinach.</li>
+                    <li>Pour the creamy tahini dressing over the salad and toss well before serving.</li>
+                  </ol>
+                </div>
+              </div>
+              <button class="toggle-btn" type="button" data-target="details-3">View Recipe</button>
+            </div>
+          </article>
+          <article class="recipe-card" data-recipe-id="4">
+            <div class="card-image">
+              <img src="images/recipe.lunch.4.jpeg" alt="Creamy Avocado Pasta" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span class="badge">Vegetarian</span>
+              </div>
+              <h2 class="card-title">Creamy Avocado Pasta</h2>
+              <p class="card-subtitle">A healthy, dairy-free take on pasta using avocado for a rich, creamy texture.</p>
+              <div class="extra-content" id="details-4">
+                <div class="recipe-section">
+                  <h4>Ingredients</h4>
+                  <ul>
+                    <li>Whole wheat or gluten-free Spaghetti.</li>
+                    <li>1 Ripe Avocado, fresh basil leaves, and 2 cloves of garlic.</li>
+                    <li>Cherry tomatoes (for topping).</li>
+                    <li>Cherry tomatoes (for topping).s</li>
+                  </ul>
+                </div>
+                <div class="recipe-section">
+                  <h4>Preparation</h4>
+                  <ol>
+                    <li>Boil the pasta according to package instructions.</li>
+                    <li>Blend the avocado, basil, garlic, and lemon juice until smooth.</li>
+                    <li>Toss the pasta with the avocado sauce and top with fresh cherry tomatoes.</li>
+                  </ol>
+                </div>
+              </div>
+              <button class="toggle-btn" type="button" data-target="details-4">View Recipe</button>
+            </div>
+          </article>
+          <article class="recipe-card" data-recipe-id="5">
+            <div class="card-image">
+              <img src="images/recipe.lunch.5.jpeg" alt="Garlic Butter Shrimp with Asparagus" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span class="badge">Seafood</span>
+              </div>
+              <h2 class="card-title">Garlic Butter Shrimp with Asparagus</h2>
+              <p class="card-subtitle">A quick, low-calorie seafood dish that looks and tastes like a 5-star meal.</p>
+              <div class="extra-content" id="details-5">
+                <div class="recipe-section">
+                  <h4>Ingredients</h4>
+                  <ul>
+                    <li>Large Shrimp (peeled and deveined).</li>
+                    <li>A bunch of fresh Asparagus.</li>
+                    <li>1 tbsp Butter (or Ghee), lemon zest, and red pepper flakes.</li>
+                    <li>Fresh parsley.</li>
+                  </ul>
+                </div>
+                <div class="recipe-section">
+                  <h4>Preparation</h4>
+                  <ol>
+                    <li>SSauté asparagus in a pan with a bit of butter until tender.</li>
+                    <li>Add the shrimp and garlic, cooking for 2-3 minutes per side.</li>
+                    <li>Finish with lemon zest and chopped parsley.</li>
+                  </ol>
+                </div>
+              </div>
+              <button class="toggle-btn" type="button" data-target="details-5">View Recipe</button>
+            </div>
+          </article>
+          <article class="recipe-card" data-recipe-id="6">
+            <div class="card-image">
+              <img src="images/recipe.lunch.6.jpeg" alt="Mediterranean Quinoa Salad with Feta" loading="lazy" />
+            </div>
+            <div class="card-content">
+              <div class="card-meta">
+                <span class="badge">Vegetarian</span>
+              </div>
+              <h2 class="card-title">Mediterranean Quinoa Salad with Feta</h2>
+              <p class="card-subtitle">A refreshing salad that works perfectly as a light lunch or a side dish.</p>
+              <div class="extra-content" id="details-6">
+                <div class="recipe-section">
+                  <h4>Ingredients</h4>
+                  <ul>
+                    <li>Cooked Quinoa.</li>
+                    <li>Cucumber, red onion, and kalamata olives.</li>
+                    <li>Low-fat Feta cheese.</li>
+                    <li>Dressing: Red wine vinegar and dried oregano.</li>
+                  </ul>
+                </div>
+                <div class="recipe-section">
+                  <h4>Preparation</h4>
+                  <ol>
+                    <li>Chop all vegetables into small cubes.</li>
+                    <li>In a large bowl, combine quinoa, vegetables, olives, and crumbled feta.</li>
+                    <li>Whisk the dressing ingredients and pour over the salad.</li>
+                  </ol>
+                </div>
+              </div>
+              <button class="toggle-btn" type="button" data-target="details-6">View Recipe</button>
+            </div>
+          </article>
+        </section>
     </main>
     <footer>
-        © 2026 Healthy Food Recipes
+      <div class="container">
+        <p>Healthy Lunch Recipes • Eat well, feel great.</p>
+      </div>
     </footer>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

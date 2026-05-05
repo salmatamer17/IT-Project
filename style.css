@@ -375,4 +375,4 @@ footer a {
   color: #D1C7BD;
   filter: brightness(0.85);
 }
-
+.theme-btn:hover { background: rgba(255,255,255,0.12); }

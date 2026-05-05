@@ -174,28 +174,3 @@ if (registerForm) {
         }
     });
 }
-/* Register Form Submission */
-const form = document.getElementById("registerForm");
-
-form.addEventListener("submit", function(e) {
-  e.preventDefault();
-
-  const username = document.getElementById("username").value;
-  const email = document.getElementById("email").value;
-  const password = document.getElementById("password").value;
-
-
-  const userData = {
-    username: username,
-    email: email,
-    password: password
-  };
-
-  localStorage.setItem("user", JSON.stringify(userData));
-
- 
-  localStorage.setItem("isLoggedIn", "true");
-
-
-  window.location.href = "home.html";
-});

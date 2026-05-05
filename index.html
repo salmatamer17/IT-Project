@@ -53,6 +53,26 @@
 <footer>
     <p>&copy; 2026 Healthy Food Recipes</p>
 </footer>
- <script src="script.js"></script>
+
+<script src="script.js"></script>
+<script>
+document.getElementById("registerForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const username = document.getElementById("username").value;
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+
+  localStorage.setItem("user", JSON.stringify({
+    username,
+    email,
+    password
+  }));
+
+  localStorage.setItem("isLoggedIn", "true");
+
+  window.location.href = "home.html";
+});
+</script>
 </body>
 </html>
